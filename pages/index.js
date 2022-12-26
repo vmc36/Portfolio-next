@@ -111,8 +111,8 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Atuei como desenvolvedor Front-end na Sia.Com Informática por 1
               ano e 6 meses, com designers e outros desenvolvedores criando, ou
-              dando manutenção sites responsivos e de fácil navegação.
-              <br /> Graduado em Sistemas de Informação pela Unipar - 2018.
+              na manutenção de sites responsivos e de fácil navegação.
+              <br /> Sou graduado em Sistemas de Informação pela Unipar - 2018.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Também durante 2 anos na Sia.com atuei como analista de suporte
