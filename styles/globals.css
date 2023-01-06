@@ -22,3 +22,36 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+.floatEffect-1:hover {
+  -webkit-transform: translate(4px, -4px);
+  -moz-transform: translate(4px, -4px);
+  -ms-transform: translate(4px, -4px);
+  transform: translate(4px, -4px);
+  box-shadow: -8px 8px 0 #af053f;
+  border-radius: 8px;
+}
+.floatEffect-2:hover {
+  -webkit-transform: translate(4px, -4px);
+  -moz-transform: translate(4px, -4px);
+  -ms-transform: translate(4px, -4px);
+  transform: translate(4px, -4px);
+  box-shadow: -8px 8px 0 #78ab7a;
+  border-radius: 8px;
+}
+.floatEffect-3:hover {
+  -webkit-transform: translate(4px, -4px);
+  -moz-transform: translate(4px, -4px);
+  -ms-transform: translate(4px, -4px);
+  transform: translate(4px, -4px);
+  box-shadow: -8px 8px 0 #5e60ce;
+  border-radius: 8px;
+}
+.floatEffect-4:hover {
+  -webkit-transform: translate(4px, -4px);
+  -moz-transform: translate(4px, -4px);
+  -ms-transform: translate(4px, -4px);
+  transform: translate(4px, -4px);
+  box-shadow: -8px 8px 0 #00ccda;
+  border-radius: 8px;
+}

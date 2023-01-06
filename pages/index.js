@@ -1,16 +1,20 @@
 import Head from "next/head";
+import { useState } from "react";
+
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { MdOutlineDarkMode } from "react-icons/md";
-import { useState } from "react";
 import { DiJavascript1, DiReact, DiGit } from "react-icons/di";
-
 import { FaVuejs, FaLaravel, FaFigma } from "react-icons/fa";
-
 import { SiTailwindcss } from "react-icons/si";
 
 import mainAvatar from "../public/main-avatar.svg";
 import contact from "../public/contact.svg";
 import laptop from "../public/laptop.svg";
+
+import web1 from "/public/web1.png";
+import web2 from "/public/web2.png";
+import web3 from "/public/web3.png";
+import web4 from "/public/web4.png";
 
 import Image from "next/image";
 
@@ -97,11 +101,11 @@ export default function Home() {
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Sou uma pessoa altamente motivada em resolver problemas e aprender
               coisas novas. Tenho facilidade de adaptação a ambientes e
-              situações diferentes e gosto de trabalhar em equipe. No total
-              tenho 3 anos de experiência em atendimento ao cliente. Também
-              possuo facilidade com inglês (escrita e leitura). Estou sempre
-              buscando oportunidades para crescer profissionalmente e contribuir
-              de maneira positiva para a empresa onde trabalho.
+              situações diferentes no trabalho em equipe. No total tenho 3 anos
+              de experiência em atendimento ao cliente. Também possuo facilidade
+              com inglês (escrita e leitura). Estou sempre buscando
+              oportunidades para crescer profissionalmente e contribuir de
+              maneira positiva para a empresa onde trabalho.
             </p>
           </div>
           <div>
@@ -189,6 +193,72 @@ export default function Home() {
                   <AiFillGithub />
                 </a>
               </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1 floatEffect-1 transition-all ">
+              <a
+                href="https://pickem-worldcup.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                  alt="Projeto NaTrave, bolão feito para a copa de 2022 no catar."
+                />
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1 floatEffect-2 transition-all">
+              <a
+                href="https://webuserapplication.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"30%"}
+                  height={"30%"}
+                  layout="responsive"
+                  src={web2}
+                  alt="Cadastro de usuário utilizando o Local Storage"
+                />
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1 floatEffect-3 transition-all">
+              <a
+                href="https://todolist-iota-sooty.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web3}
+                  alt="Lista de tarefas a fazer."
+                />
+              </a>
+            </div>
+            <div className="basis-1/3 flex-1 floatEffect-4 transition-all">
+              <a
+                href="https://current-weather-api.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web4}
+                  alt="Consulta temperatura da cidade baseada na localização do usuário."
+                />
+              </a>
             </div>
           </div>
         </section>
