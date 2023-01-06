@@ -195,72 +195,90 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 floatEffect-1 transition-all ">
-              <a
-                href="https://pickem-worldcup.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+          <section>
+            <h3 className="text-3xl py-1 dark:text-white">
+              Alguns Projetos Pessoais:
+            </h3>
+            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div
+                className="basis-1/3 flex-1 floatEffect-1 transition-all "
+                title="Projeto NaTrave, bolão feito para a copa de 2022 no Catar."
               >
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={web1}
-                  alt="Projeto NaTrave, bolão feito para a copa de 2022 no catar."
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 floatEffect-2 transition-all">
-              <a
-                href="https://webuserapplication.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                <a
+                  href="https://pickem-worldcup.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={web1}
+                    sub
+                    alt="Projeto NaTrave, bolão feito para a copa de 2022 no Catar."
+                  />
+                </a>
+              </div>
+              <div
+                className="basis-1/3 flex-1 floatEffect-2 transition-all"
+                title="Cadastro de usuário utilizando o Local Storage."
               >
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"30%"}
-                  height={"30%"}
-                  layout="responsive"
-                  src={web2}
-                  alt="Cadastro de usuário utilizando o Local Storage"
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 floatEffect-3 transition-all">
-              <a
-                href="https://todolist-iota-sooty.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                <a
+                  href="https://webuserapplication.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"30%"}
+                    height={"30%"}
+                    layout="responsive"
+                    src={web2}
+                    alt="Cadastro de usuário utilizando o Local Storage"
+                  />
+                </a>
+              </div>
+              <div
+                className="basis-1/3 flex-1 floatEffect-3 transition-all"
+                title="Lista de tarefas a fazer."
               >
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={web3}
-                  alt="Lista de tarefas a fazer."
-                />
-              </a>
-            </div>
-            <div className="basis-1/3 flex-1 floatEffect-4 transition-all">
-              <a
-                href="https://current-weather-api.vercel.app"
-                target="_blank"
-                rel="noreferrer"
+                <a
+                  href="https://todolist-iota-sooty.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={web3}
+                    alt="Lista de tarefas a fazer."
+                  />
+                </a>
+              </div>
+              <div
+                className="basis-1/3 flex-1 floatEffect-4 transition-all"
+                title="Consulta temperatura da cidade baseada na localização do usuário."
               >
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={web4}
-                  alt="Consulta temperatura da cidade baseada na localização do usuário."
-                />
-              </a>
+                <a
+                  href="https://current-weather-api.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    className="rounded-lg object-cover"
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    src={web4}
+                    alt="Consulta temperatura da cidade baseada na localização do usuário."
+                  />
+                </a>
+              </div>
             </div>
-          </div>
+          </section>
         </section>
       </main>
     </div>
