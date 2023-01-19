@@ -68,7 +68,7 @@ export default function Home() {
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
                 Olá! Me chamo Vinicius e atuo como desenvolvedor front-end. Caso
-                precise entrar em contato, segue as redes sociais abaixo:
+                precise entrar em contato, redes sociais abaixo:
               </p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a
