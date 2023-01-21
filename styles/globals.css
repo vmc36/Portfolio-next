@@ -44,7 +44,7 @@ a {
   -moz-transform: translate(4px, -4px);
   -ms-transform: translate(4px, -4px);
   transform: translate(4px, -4px);
-  box-shadow: -8px 8px 0 #5e60ce;
+  box-shadow: -8px 8px 0 #ff9466;
   border-radius: 8px;
 }
 .floatEffect-4:hover {

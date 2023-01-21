@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-200">
-        <section className="min-h-screen">
+        <section className="min-h-[70vh]">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Vinicius Modesto</h1>
             <ul className="flex items-center">
@@ -199,7 +199,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white">
               Alguns Projetos Pessoais:
             </h3>
-            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
               <div
                 className="basis-1/3 flex-1 floatEffect-1 transition-all "
                 title="Projeto NaTrave, bolão feito para a copa de 2022 no Catar."
@@ -215,7 +215,6 @@ export default function Home() {
                     height={"100%"}
                     layout="responsive"
                     src={web1}
-                    sub
                     alt="Projeto NaTrave, bolão feito para a copa de 2022 no Catar."
                   />
                 </a>
@@ -241,10 +240,10 @@ export default function Home() {
               </div>
               <div
                 className="basis-1/3 flex-1 floatEffect-3 transition-all"
-                title="Lista de tarefas a fazer."
+                title="Border Radius Previewer."
               >
                 <a
-                  href="https://todolist-iota-sooty.vercel.app/"
+                  href="https://border-radius-previewer-vmc36.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -254,7 +253,7 @@ export default function Home() {
                     height={"100%"}
                     layout="responsive"
                     src={web3}
-                    alt="Lista de tarefas a fazer."
+                    alt="Border Radius Previewer."
                   />
                 </a>
               </div>
