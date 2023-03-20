@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-200">
-        <section className="min-h-[70vh]">
+        <section className="min-h-[70vh] xl:min-h-[35vh]">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Vinicius Modesto</h1>
             <ul className="flex items-center">
@@ -48,7 +48,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="justify-evenly w-full items-center md:flex ">
-            <div className="mx-auto rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96 ">
+            <div className="mx-auto rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96 2xl:m-0 ">
               <Image src={mainAvatar} layout="fill" objectFit="cover" alt="Avatar em memoji" />
             </div>
             <div className="text-center p-10 py-10">
@@ -69,14 +69,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="xl:mt-32">
-          <div>
+        <section className="xl:mt-32 2xl:text-center">
+          <div className="2xl:text-align: center">
             <h3 className="text-3xl py-1 dark:text-white ">Sobre Mim:</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Atualmente moro em Umuarama-PR, tenho 26 anos.</p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Sou uma pessoa altamente motivada em resolver problemas e aprender coisas novas. Tenho facilidade de adaptação a ambientes e situações diferentes
-              no trabalho em equipe. No total tenho 3 anos de experiência em atendimento ao cliente. Também possuo facilidade com inglês (escrita e leitura).
-              Estou sempre buscando oportunidades para crescer profissionalmente e contribuir de maneira positiva para a empresa onde trabalho.
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 2xl:w-1/2 2xl:m-auto">
+              Sou uma pessoa altamente motivada em resolver problemas e aprender coisas novas trabalhando em equipe. Possuo 3 anos de experiência em atendimento
+              e resolução de problemas ao cliente. Também possuo facilidade com inglês (escrita e leitura). Busco sempre contribuir e crescer de forma positiva
+              profissionalmente.
             </p>
           </div>
           <div>
