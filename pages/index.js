@@ -72,7 +72,7 @@ export default function Home() {
         <section className="xl:mt-32 2xl:text-center">
           <div className="2xl:text-align: center">
             <h3 className="text-3xl py-1 dark:text-white ">Sobre Mim:</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Atualmente moro em Umuarama-PR, tenho 26 anos.</p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Atualmente moro em Recife-PE, tenho 26 anos.</p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 2xl:w-1/2 2xl:m-auto">
               Sou uma pessoa altamente motivada em resolver problemas e aprender coisas novas trabalhando em equipe. Possuo 3 anos de experiência em atendimento
               e resolução de problemas ao cliente. Também possuo facilidade com inglês (escrita e leitura). Busco sempre contribuir e crescer de forma positiva
@@ -91,44 +91,44 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 text-lg  dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 text-lg dark:text-white  dark:bg-gray-700 flex-1">
               <Image src={laptop} width={100} height={100} alt="laptop emoji" />
               <h3 className="text-lg font-medium pt-8 pb-2  ">Experiência:</h3>
               <p className="py-2">Como desenvolvedor front-end, aqui uma lista de ferramentas que já trabalhei ou possuo experiência:</p>
-              <div className="flex items-center justify-center  space-x-1">
-                <DiJavascript1 />
-                <p className="text-gray-800  py-1">JavaScript</p>{' '}
-              </div>
               <div className="flex items-center justify-center space-x-1">
+                <DiJavascript1 />
+                <p className="text-gray-800 dark:text-white   py-1">JavaScript</p>{' '}
+              </div>
+              <div className="flex items-center dark:text-white  justify-center space-x-1">
                 <FaVuejs />
-                <p className="text-gray-800 py-1">VueJS</p>
+                <p className="text-gray-800 dark:text-white  py-1">VueJS</p>
               </div>
 
-              <div className="flex items-center justify-center space-x-1">
+              <div className="flex items-center dark:text-white  justify-center space-x-1">
                 <DiReact />
-                <p className="text-gray-800 py-1">React</p>
+                <p className="text-gray-800 dark:text-white  py-1">React</p>
               </div>
-              <div className="flex items-center justify-center space-x-1">
+              <div className="flex items-center dark:text-white  justify-center space-x-1">
                 <DiGit />
-                <p className="text-gray-800 py-1">Git</p>
+                <p className="text-gray-800 dark:text-white  py-1">Git</p>
               </div>
               <div className="flex items-center justify-center space-x-1">
                 <SiTailwindcss />
-                <p className="text-gray-800 py-1">TailwindCss</p>
+                <p className="text-gray-800 dark:text-white  py-1">TailwindCss</p>
               </div>
               <div className="flex items-center justify-center space-x-1">
                 <FaFigma />
-                <p className="text-gray-800 py-1">Figma</p>
+                <p className="text-gray-800  dark:text-white  py-1">Figma</p>
               </div>
               <div className="flex items-center justify-center space-x-1">
                 <FaLaravel />
-                <p className="text-gray-800 py-1">Laravel</p>
+                <p className="text-gray-800 dark:text-white  py-1">Laravel</p>
               </div>
             </div>
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:text-white  dark:bg-gray-700 flex-1">
               <Image src={contact} width={100} height={100} alt="meu memoji" />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Contato:</h3>
+              <h3 className="text-lg  font-medium pt-8 pb-2  ">Contato:</h3>
               <p className="py-2">Caso queira entrar em contato, segue meu email e redes sociais!</p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a href="mailto:viniciusmodesto.dev@gmail.com" className="hover:contrast-200 duration-150">
@@ -192,7 +192,7 @@ export default function Home() {
           </section>
         </section>
       </main>
-      <footer className="p-10 text-center">
+      <footer className="p-10 text-center dark:text-white dark:bg-gray-900 ">
         <p> Copyright © 2023 Vinicius Modesto.</p>
       </footer>
     </div>
