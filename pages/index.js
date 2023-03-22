@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlineDarkMode } from 'react-icons/md';
@@ -52,8 +53,17 @@ export default function Home() {
               <Image src={mainAvatar} layout="fill" objectFit="cover" alt="Avatar em memoji" />
             </div>
             <div className="text-center p-10 py-10">
-              <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl dark:duration-100">Vinicius Modesto</h2>
-              <h3 className="text-2xl py-2 dark:text-white md:text-3xl dark:duration-100">Front-end Developer.</h3>
+              <TypeAnimation
+                className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl dark:duration-100"
+                sequence={['Vinicius Modesto']}
+                wrapper="h1"
+              />
+              <TypeAnimation
+                sequence={['Front-End Developer.']}
+                speed={1}
+                wrapper="h2"
+                className="text-2xl py-2 dark:text-white md:text-3xl dark:duration-100"
+              />
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
                 Olá! Me chamo Vinicius <br /> Desenvolvedor front-end.
               </p>
