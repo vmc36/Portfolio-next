@@ -80,26 +80,6 @@ export default function Home() {
           </div>
         </section>
         <section className="xl:mt-32 2xl:text-center">
-          <div className="2xl:text-align: center">
-            <h3 className="text-3xl py-1 dark:text-white ">Sobre Mim:</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">Atualmente moro em Recife-PE, tenho 26 anos.</p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 2xl:w-1/2 2xl:m-auto">
-              Sou uma pessoa altamente motivada em resolver problemas e aprender coisas novas trabalhando em equipe. Possuo 3 anos de experiência em atendimento
-              e resolução de problemas ao cliente. Também possuo facilidade com inglês (escrita e leitura). Busco sempre contribuir e crescer de forma positiva
-              profissionalmente.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-3xl mt-4 py-2 dark:text-white ">Experiência Profissional:</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Atuei como desenvolvedor Front-end na Sia.Com Informática por 1 ano e 6 meses, com designers e outros desenvolvedores criando, ou na manutenção de
-              sites responsivos e de fácil navegação.
-              <br /> Sou graduado em Sistemas de Informação pela Unipar - 2018.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Também durante 2 anos na Sia.com atuei como analista de suporte para os Sistemas SmartCom e Smartpharmacy.
-            </p>
-          </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 text-lg dark:text-white  dark:bg-gray-700 flex-1">
               <Image src={laptop} width={100} height={100} alt="laptop emoji" />
