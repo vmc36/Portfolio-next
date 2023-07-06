@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
 
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlineDarkMode } from 'react-icons/md';
 import { DiJavascript1, DiReact, DiGit } from 'react-icons/di';
 import { FaVuejs, FaLaravel, FaFigma } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 import mainAvatar from '../public/main-avatar.svg';
 import contact from '../public/contact.svg';
@@ -32,7 +32,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 duration-200">
         <section className="min-h-[70vh] xl:min-h-[35vh]">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Vinicius Modesto</h1>
+            <h1 className="font-burtons text-3xl">VMC</h1>
             <ul className="flex items-center">
               <li>
                 <MdOutlineDarkMode onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl duration-100" />
@@ -49,21 +49,20 @@ export default function Home() {
             </ul>
           </nav>
           <div className="justify-evenly w-full items-center md:flex ">
-            <div className="mx-auto rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96 2xl:m-0 ">
-              <Image src={mainAvatar} layout="fill" objectFit="cover" alt="Avatar em memoji" />
-            </div>
+            <motion.div
+              initial={{ opacity: 0, translateX: -50, translateY: -50 }}
+              animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+              transition={{ ease: 'easeOut', duration: 1 }}
+            >
+              <div className="mx-auto rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96 2xl:m-0 ">
+                <Image src={mainAvatar} layout="fill" objectFit="cover" alt="Avatar em memoji" />
+              </div>
+            </motion.div>
+
             <div className="text-center p-10 py-10">
-              <TypeAnimation
-                className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl dark:duration-100"
-                sequence={['Vinicius Modesto']}
-                wrapper="h1"
-              />
-              <TypeAnimation
-                sequence={['Front-End Developer.']}
-                speed={1}
-                wrapper="h2"
-                className="text-2xl py-2 dark:text-white md:text-3xl dark:duration-100"
-              />
+              <h1 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl dark:duration-100"> Vinicius Modesto</h1>
+              <h1 className="text-2xl py-2 dark:text-white md:text-3xl dark:duration-100"> Front-End Developer.</h1>
+
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
                 Olá! Me chamo Vinicius <br /> Desenvolvedor front-end.
               </p>
@@ -72,6 +71,7 @@ export default function Home() {
                   {' '}
                   <AiFillLinkedin />{' '}
                 </a>
+
                 <a href="https://github.com/vmc36" target="_blank" rel="noreferrer" className="hover:contrast-200 duration-150">
                   <AiFillGithub />
                 </a>
@@ -82,9 +82,15 @@ export default function Home() {
         <section className="xl:mt-32 2xl:text-center">
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 text-lg dark:text-white  dark:bg-gray-700 flex-1">
-              <Image src={laptop} width={100} height={100} alt="laptop emoji" />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">Experiência:</h3>
-              <p className="py-2">Como desenvolvedor front-end, aqui uma lista de ferramentas que já trabalhei ou possuo experiência:</p>
+              <motion.div
+                initial={{ opacity: 0, translateX: -50, translateY: -50 }}
+                animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                transition={{ ease: 'easeOut', duration: 1.3 }}
+              >
+                <Image src={laptop} width={100} height={100} alt="laptop emoji" />
+              </motion.div>
+              <h3 className="text-lg font-medium pt-8 pb-2">Experiência:</h3>
+              <p className="py-2">Como desenvolvedor front-end, aqui uma lista de tecnologias que possuo experiência:</p>
               <div className="flex items-center justify-center space-x-1">
                 <DiJavascript1 />
                 <p className="text-gray-800 dark:text-white   py-1">JavaScript</p>{' '}
@@ -117,7 +123,13 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:text-white  dark:bg-gray-700 flex-1">
-              <Image src={contact} width={100} height={100} alt="meu memoji" />
+              <motion.div
+                initial={{ opacity: 0, translateX: -50, translateY: -50 }}
+                animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                transition={{ ease: 'easeOut', duration: 1.3 }}
+              >
+                <Image src={contact} width={100} height={100} alt="meu memoji" />
+              </motion.div>
               <h3 className="text-lg  font-medium pt-8 pb-2  ">Contato:</h3>
               <p className="py-2">Caso queira entrar em contato, segue meu email e redes sociais!</p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
