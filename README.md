@@ -1,8 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Portfolio Documentation
 
-## Getting Started
+This is a documentation guide for your portfolio built with Next.js and hosted on Vercel.
+Here you will find information about the project structure, how to run it locally, and how to deploy it on Vercel.
+
+## Running Locally
 
 First, run the development server:
+
+To run your portfolio locally, follow these steps:
+
+1. Make sure you have Node.js installed on your machine.
+2. Clone your portfolio repository: `git clone <REPOSITORY_URL>`
+3. Navigate to the project directory: `cd <DIRECTORY_NAME>`
+4. Install project dependencies: `npm install` or `yarn install`
+5. Start the development server: `npm run dev` or `yarn dev`
+6. Open your browser and access `http://localhost:3000` to view your portfolio locally.
 
 ```bash
 npm run dev
@@ -10,25 +22,23 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment on Vercel
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Vercel is a hosting platform that allows easy deployment of Next.js applications. Follow these steps to deploy your portfolio on Vercel:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Go to the Vercel website: [https://vercel.com](https://vercel.com)
+2. Create an account or log in.
+3. In the Vercel dashboard, click on "Import Project".
+4. Select the Git import option and connect to your portfolio repository.
+5. Choose the desired settings, such as project name and deployment configurations.
+6. Click on "Deploy" and wait for the deployment process to complete.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+After the deployment is completed, Vercel will provide a URL where your portfolio is hosted. You can access that URL to view and share your portfolio online.
 
-## Learn More
+Feel free to customize your Next.js portfolio on Vercel and make changes to the code as needed. If you have any further questions, don't hesitate to ask.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📧 You can reach out to me via email at [viniciusmodesto.dev@gmail.com](mailto:viniciusmodesto.dev@gmail.com).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to contact me with any inquiries, collaborations, or opportunities. I look forward to hearing from you!
