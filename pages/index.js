@@ -164,13 +164,15 @@ export default function Home() {
                 autoplay: true,
                 arrows: false,
                 pagination: false,
-                width: '55%',
+                width: '100%',
                 autoWidth: true,
                 gap: '1rem',
                 focus: 'center',
                 breakpoints: {
+                  1024: { width: '60%' },
                   640: {
                     perPage: 1,
+                    width: '55%',
                   },
                 },
               }}
