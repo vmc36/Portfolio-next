@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import '@splidejs/react-splide/css';
 
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { MdOutlineDarkMode } from 'react-icons/md';
@@ -7,6 +8,7 @@ import { DiJavascript1, DiReact, DiGit } from 'react-icons/di';
 import { FaVuejs, FaLaravel, FaFigma } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { motion } from 'framer-motion';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 import mainAvatar from '../public/main-avatar.svg';
 import contact from '../public/contact.svg';
@@ -16,6 +18,7 @@ import web1 from '/public/web1.png';
 import web2 from '/public/web2.png';
 import web3 from '/public/web3.png';
 import web4 from '/public/web4.png';
+import web5 from '/public/web5.png';
 
 import Image from 'next/image';
 
@@ -146,54 +149,90 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <section>
-            <h3 className="text-3xl lg:text-center py-1 dark:text-white">Alguns Projetos Pessoais:</h3>
-            <div className="grid grid-cols-1 w-full items-center gap-10 py-10 md:grid-cols-2 xl:grid-cols-2 xl:w-11/12 xl:m-auto 2xl:w-full 2xl:flex ">
-              <div className=" lg:w-full floatEffect-1 transition-all  " title="Projeto NaTrave, bolão feito para a copa de 2022 no Catar.">
-                <a href="https://pickem-worldcup.vercel.app/" target="_blank" rel="noreferrer">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={'100%'}
-                    height={'100%'}
-                    layout="responsive"
-                    src={web1}
-                    alt="Projeto NaTrave, bolão feito para a copa de 2022 no Catar."
-                  />
-                </a>
-              </div>
-              <div className=" lg:w-full floatEffect-2 transition-all" title="Cadastro de usuário utilizando o Local Storage.">
-                <a href="https://webuserapplication.vercel.app/" target="_blank" rel="noreferrer">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={'30%'}
-                    height={'30%'}
-                    layout="responsive"
-                    src={web2}
-                    alt="Cadastro de usuário utilizando o Local Storage"
-                  />
-                </a>
-              </div>
-              <div className="  lg:w-full floatEffect-3 transition-all" title="Border Radius Previewer.">
-                <a href="https://border-radius-previewer-vmc36.vercel.app/" target="_blank" rel="noreferrer">
-                  <Image className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" src={web3} alt="Border Radius Previewer." />
-                </a>
-              </div>
-              <div className="  lg:w-full  floatEffect-4 transition-all" title="Consulta temperatura da cidade baseada na localização do usuário.">
-                <a href="https://current-weather-api.vercel.app" target="_blank" rel="noreferrer">
-                  <Image
-                    className="rounded-lg object-cover"
-                    width={'100%'}
-                    height={'100%'}
-                    layout="responsive"
-                    src={web4}
-                    alt="Consulta temperatura da cidade baseada na localização do usuário."
-                  />
-                </a>
-              </div>
-            </div>
-          </section>
+        </section>
+        <section>
+          <h3 className="text-3xl lg:text-center my-2 dark:text-white">Alguns Projetos Pessoais:</h3>
+          <div className="w-full flex items-center">
+            <Splide
+              className="m-auto"
+              options={{
+                rewind: true,
+                rewind: true,
+                perMove: 1,
+                perPage: 2,
+                rewindByDrag: 'true',
+
+                autoplay: true,
+                arrows: false,
+                pagination: false,
+                width: '55%',
+                autoWidth: true,
+                gap: '1rem',
+                focus: 'center',
+                breakpoints: {
+                  640: {
+                    perPage: 1,
+                  },
+                },
+              }}
+            >
+              <SplideSlide>
+                <div className="floatEffect-1 transition-all  " title="Projeto NaTrave, bolão feito para a copa de 2022 no Catar.">
+                  <a href="https://pickem-worldcup.vercel.app/" target="_blank" rel="noreferrer">
+                    <Image
+                      className="rounded-lg object-cover "
+                      src={web1}
+                      height={350}
+                      width={350}
+                      alt="Projeto NaTrave, bolão feito para a copa de 2022 no Catar."
+                    />
+                  </a>
+                </div>
+              </SplideSlide>
+
+              <SplideSlide>
+                {' '}
+                <div className="floatEffect-2 transition-all" title="Cadastro de usuário utilizando o Local Storage.">
+                  <a href="https://webuserapplication.vercel.app/" target="_blank" rel="noreferrer">
+                    <Image className="rounded-lg object-cover" src={web2} alt="Cadastro de usuário utilizando o Local Storage" height={350} width={350} />
+                  </a>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                {' '}
+                <div className="floatEffect-3 transition-all" title="Border Radius Previewer.">
+                  <a href="https://border-radius-previewer-vmc36.vercel.app/" target="_blank" rel="noreferrer">
+                    <Image className="rounded-lg object-cover" src={web3} alt="Border Radius Previewer." height={350} width={350} />
+                  </a>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                {' '}
+                <div className="floatEffect-4 transition-all" title="Consulta temperatura da cidade baseada na localização do usuário.">
+                  <a href="https://current-weather-api.vercel.app" target="_blank" rel="noreferrer">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src={web4}
+                      height={350}
+                      width={350}
+                      alt="Consulta temperatura da cidade baseada na localização do usuário."
+                    />
+                  </a>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                {' '}
+                <div className="floatEffect-4 transition-all" title="Consulta temperatura da cidade baseada na localização do usuário.">
+                  <a href="https://todolist-iota-sooty.vercel.app/" target="_blank" rel="noreferrer">
+                    <Image className="rounded-lg object-cover" src={web5} height={350} width={350} alt="Lista de tarefas a fazer." />
+                  </a>
+                </div>
+              </SplideSlide>
+            </Splide>
+          </div>
         </section>
       </main>
+
       <footer className="p-10 text-center dark:text-white dark:bg-gray-900 ">
         <p> Copyright © 2023 Vinicius Modesto.</p>
       </footer>

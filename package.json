@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
     "firebase": "^9.10.0",
     "framer-motion": "^10.12.18",
     "moment": "^2.29.4",
