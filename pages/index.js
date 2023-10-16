@@ -161,7 +161,6 @@ export default function Home() {
                 perMove: 1,
                 perPage: 2,
                 rewindByDrag: 'true',
-
                 autoplay: true,
                 arrows: false,
                 pagination: false,
