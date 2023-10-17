@@ -172,7 +172,7 @@ export default function Home() {
                   1024: { width: '60%' },
                   640: {
                     perPage: 1,
-                    width: '55%',
+                    width: '100%',
                   },
                 },
               }}
