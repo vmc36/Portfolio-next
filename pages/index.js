@@ -19,6 +19,7 @@ import web2 from '/public/web2.png';
 import web3 from '/public/web3.png';
 import web4 from '/public/web4.png';
 import web5 from '/public/web5.png';
+import web6 from '/public/web6.jpg';
 
 import Image from 'next/image';
 
@@ -150,16 +151,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="m-auto w-full  lg:w-2/3 dark:bg-gray-900">
           <h3 className="text-3xl lg:text-center my-2 dark:text-white">Alguns Projetos Pessoais:</h3>
           <div className="w-full flex items-center">
             <Splide
               className="m-auto"
               options={{
                 rewind: true,
+                interval: 2000,
                 rewind: true,
                 perMove: 1,
-                perPage: 2,
+                perPage: 1,
                 rewindByDrag: 'true',
                 autoplay: true,
                 arrows: false,
@@ -193,7 +195,22 @@ export default function Home() {
 
               <SplideSlide>
                 {' '}
-                <div className="floatEffect-2 transition-all" title="Cadastro de usuário utilizando o Local Storage.">
+                <div className="floatEffect-4 transition-all rounded-lg" title="Aplicação que retorna informações da empresa que emitiu minha nota fiscal">
+                  <a href="https://chavenfe.vercel.app/" target="_blank" rel="noreferrer">
+                    <Image
+                      className="rounded-lg object-cover"
+                      src={web6}
+                      height={350}
+                      width={350}
+                      alt="Aplicação que retorna informações da empresa que emitiu minha nota fiscal."
+                    />
+                  </a>
+                </div>
+              </SplideSlide>
+
+              <SplideSlide>
+                {' '}
+                <div className="floatEffect-2 transition-all rounded-lg" title="Cadastro de usuário utilizando o Local Storage.">
                   <a href="https://webuserapplication.vercel.app/" target="_blank" rel="noreferrer">
                     <Image className="rounded-lg object-cover" src={web2} alt="Cadastro de usuário utilizando o Local Storage" height={350} width={350} />
                   </a>
@@ -201,7 +218,7 @@ export default function Home() {
               </SplideSlide>
               <SplideSlide>
                 {' '}
-                <div className="floatEffect-3 transition-all" title="Border Radius Previewer.">
+                <div className="floatEffect-3 transition-all rounded-lg" title="Border Radius Previewer.">
                   <a href="https://border-radius-previewer-vmc36.vercel.app/" target="_blank" rel="noreferrer">
                     <Image className="rounded-lg object-cover" src={web3} alt="Border Radius Previewer." height={350} width={350} />
                   </a>
@@ -209,7 +226,7 @@ export default function Home() {
               </SplideSlide>
               <SplideSlide>
                 {' '}
-                <div className="floatEffect-4 transition-all" title="Consulta temperatura da cidade baseada na localização do usuário.">
+                <div className="floatEffect-4 transition-all rounded-lg" title="Consulta temperatura da cidade baseada na localização do usuário.">
                   <a href="https://current-weather-api.vercel.app" target="_blank" rel="noreferrer">
                     <Image
                       className="rounded-lg object-cover"
@@ -223,7 +240,7 @@ export default function Home() {
               </SplideSlide>
               <SplideSlide>
                 {' '}
-                <div className="floatEffect-4 transition-all" title="Consulta temperatura da cidade baseada na localização do usuário.">
+                <div className="floatEffect-4 transition-all rounded-lg" title="Consulta temperatura da cidade baseada na localização do usuário.">
                   <a href="https://todolist-iota-sooty.vercel.app/" target="_blank" rel="noreferrer">
                     <Image className="rounded-lg object-cover" src={web5} height={350} width={350} alt="Lista de tarefas a fazer." />
                   </a>
